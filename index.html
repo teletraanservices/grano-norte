@@ -3,267 +3,511 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#181512">
-  <meta name="description" content="Arcis Coffee: café de especialidad, granos recién tostados, métodos de extracción y repostería artesanal.">
-  <title>Arcis Coffee | Café de Especialidad</title>
+  <meta name="theme-color" content="#F7F3EB">
+  <meta name="description" content="Grano Norte: cafetería de especialidad y tostaduría artesanal en Copiapó. Café fresco, panadería de masa madre y repostería de la casa.">
+  <title>Grano Norte | Cafetería de Especialidad · Copiapó</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/56912345678?text=Hola%20Grano%20Norte%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20para%20retiro"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Pedir por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Pedir por WhatsApp</span>
+  </a>
+
   <header class="header">
     <div class="container nav-container">
-      <a href="#inicio" class="brand" aria-label="Arcis Coffee, ir al inicio">
-        <span class="brand-copy"><strong>ARCIS COFFEE</strong><small>Café de Especialidad</small></span>
+      <a href="#inicio" class="brand" aria-label="Grano Norte, ir al inicio">
+        <span class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+        <span class="brand-copy">
+          <strong>Grano Norte</strong>
+          <small>Tostaduría &amp; Café · Copiapó</small>
+        </span>
       </a>
       <nav aria-label="Navegación principal">
         <ul class="nav-links">
-          <li><a href="#carta">Carta de menú</a></li>
-          <li><a href="#granos">Nuestros granos</a></li>
-          <li><a href="#metodos">Métodos</a></li>
-          <li><a href="#reposteria">Repostería</a></li>
-          <li><a class="nav-cta" href="#visitanos">Encuéntranos <i class="fa-solid fa-arrow-right"></i></a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#carta">La Carta</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#ubicacion">Horarios y Mapa</a></li>
+          <li>
+            <a class="nav-cta" href="https://wa.me/56912345678?text=Hola%20Grano%20Norte%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> Pedir ahora
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- PORTADA -->
     <section class="hero" id="inicio">
-      <div class="hero-shade"></div>
-      <div class="container hero-content">
-        <p class="eyebrow"><span></span> ARCIS COFFEE · Café de Especialidad</p>
-        <h1>Un buen café<br>cambia <em>todo.</em></h1>
-        <p class="hero-description">Granos recién tostados, historias de origen y aromas que invitan a bajar el ritmo. Tu próximo momento favorito empieza aquí.</p>
-        <div class="hero-actions">
-          <a href="#granos" class="button button-primary">Descubre nuestro café <i class="fa-solid fa-arrow-down"></i></a>
-          <a href="#visitanos" class="button button-quiet">Ven a conocernos</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><i class="fa-solid fa-sun"></i> Copiapó · Región de Atacama</p>
+          <h1>El ritmo lento del norte en cada <em>taza.</em></h1>
+          <p class="hero-description">
+            Tostamos granos seleccionados en pequeños lotes y horneamos cada mañana en el corazón de Copiapó. Un refugio cálido para empezar el día o hacer una pausa sin apuro.
+          </p>
+          <div class="hero-actions">
+            <a href="#carta" class="button button-olive">
+              Ver carta y precios <i class="fa-solid fa-mug-hot"></i>
+            </a>
+            <a href="https://wa.me/56912345678?text=Hola%20Grano%20Norte%2C%20me%20gustar%C3%ADa%20encargar%20para%20retirar"
+               class="button button-cream"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> Encargar por WhatsApp
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="fa-solid fa-fire-burner"></i> Tueste semanal propio</span>
+            <span><i class="fa-solid fa-wheat-awn"></i> Masa madre &amp; repostería casera</span>
+          </div>
         </div>
-        <div class="hero-note"><i class="fa-solid fa-location-dot"></i> Un rincón para disfrutar sin apuro</div>
+
+        <div class="hero-visual">
+          <div class="hero-photo-frame">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1100&q=85" alt="Taza de latte art servido en mesa de madera cálida">
+          </div>
+          <div class="hero-floating-badge">
+            <span class="badge-icon"><i class="fa-solid fa-award"></i></span>
+            <div>
+              <strong>Grano 100% Arábica</strong>
+              <small>Extracción calibrada cada mañana</small>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-stamp" aria-label="Café de especialidad">
-        <span>CAFÉ DE</span><strong>ESPECIALIDAD</strong><i class="fa-solid fa-seedling"></i>
-      </div>
-      <a href="#granos" class="scroll-cue" aria-label="Desplazarse a nuestros granos"><span></span></a>
     </section>
 
+    <!-- HISTORIA DEL LOCAL -->
+    <section class="story section-pad" id="historia">
+      <div class="container story-grid">
+        <div class="story-media">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85" alt="Interior acogedor de la cafetería Grano Norte">
+          <div class="story-quote-card">
+            <p>“Queríamos traer el oficio del café de especialidad a Copiapó sin solemnidades: buen grano, sombra fresca y pan recién salido del horno.”</p>
+            <span>— Familia fundadora, Barrio Alameda</span>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <p class="eyebrow"><i class="fa-solid fa-leaf"></i> Nuestra Historia</p>
+          <h2>Nacimos entre el sol del desierto y el aroma a <em>tueste fresco.</em></h2>
+          <p>
+            <strong>Grano Norte</strong> comenzó en 2021 como un pequeño taller de tueste artesanal en Copiapó. Cansados de que el buen café de origen solo se encontrara en las grandes capitales, decidimos abrir las puertas de nuestra barra en el valle.
+          </p>
+          <p>
+            Trabajamos directamente con importadores de microlotes latinoamericanos, perfilando cada curva de tueste para resaltar notas dulces a cacao, panela y frutos secos que maridan perfecto con nuestra panadería de fermentación lenta.
+          </p>
+
+          <div class="story-pillars">
+            <div class="pillar">
+              <strong>+12 Orígenes</strong>
+              <span>Rotación de temporada de Colombia, Perú y Brasil.</span>
+            </div>
+            <div class="pillar">
+              <strong>Hecho en casa</strong>
+              <span>Sándwiches en pan ciabatta y bollería del día.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENÚ CON CATEGORÍAS Y PRECIOS (OPTIMIZADO PARA MÓVIL) -->
     <section class="menu-section section-pad" id="carta">
       <div class="container">
         <div class="menu-heading">
-          <p class="eyebrow"><span></span> Preparado con cariño, servido al momento</p>
-          <h2>Carta de <em>menú</em></h2>
-          <p>Un antojo para cada momento: café de especialidad, opciones frescas y algo rico hecho en casa.</p>
-          <nav class="menu-jump" aria-label="Categorías de la carta">
-            <a href="#bebestibles"><i class="fa-solid fa-mug-hot"></i> Bebestibles</a>
-            <a href="#sandwicheria"><i class="fa-solid fa-bread-slice"></i> Sándwichería</a>
-            <a href="#postres"><i class="fa-solid fa-cookie-bite"></i> Postres</a>
-          </nav>
+          <p class="eyebrow"><i class="fa-solid fa-book-open"></i> Carta del Día</p>
+          <h2>Sabores pensados para <em>acompañarte</em></h2>
+          <p>Leche vegetal de avena o almendra disponible sin costo adicional en todas nuestras preparaciones.</p>
         </div>
 
-        <div class="menu-categories">
-          <article class="menu-category" id="bebestibles">
-            <header class="menu-category-heading">
-              <span class="menu-category-icon"><i class="fa-solid fa-mug-hot"></i></span>
-              <div><span class="menu-kicker">01 / PARA TOMAR</span><h3>Bebestibles</h3></div>
-              <span class="menu-category-note">Calientitos, frescos y hechos al momento</span>
+        <!-- Barra rápida pegajosa en celulares -->
+        <nav class="menu-sticky-tabs" aria-label="Categorías del menú">
+          <a href="#cat-cafe"><i class="fa-solid fa-mug-hot"></i> Café de Barra</a>
+          <a href="#cat-frios"><i class="fa-solid fa-glass-water"></i> Fríos &amp; Naturales</a>
+          <a href="#cat-salado"><i class="fa-solid fa-bread-slice"></i> Sándwiches</a>
+          <a href="#cat-dulce"><i class="fa-solid fa-cake-slice"></i> Pastelería</a>
+        </nav>
+
+        <div class="menu-layout">
+          <!-- Categoría 1 -->
+          <article class="menu-card" id="cat-cafe">
+            <header class="menu-card-header">
+              <div>
+                <span class="menu-tag">01 · CALIENTES</span>
+                <h3>Café de Especialidad</h3>
+              </div>
+              <span class="menu-subnote">Tueste medio de la casa</span>
             </header>
-            <div class="menu-subcategories">
-              <section class="menu-subcategory">
-                <h4>Cafés (calientes de especialidad)</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Espresso</strong><p>Corto, intenso y con crema aterciopelada.</p></div></li>
-                  <li><div><strong>Americano</strong><p>Espresso y agua caliente, limpio y aromático.</p></div></li>
-                  <li><div><strong>Capuccino</strong><p>Espresso, leche texturizada y espuma suave.</p></div></li>
-                  <li><div><strong>Flat white</strong><p>Doble espresso con leche sedosa.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Cafés helados</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Iced latte</strong><p>Espresso, leche fría y hielo.</p></div></li>
-                  <li><div><strong>Cold brew</strong><p>Café de infusión lenta, suave y refrescante.</p></div></li>
-                  <li><div><strong>Espresso tonic</strong><p>Espresso, tónica y un toque cítrico.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Batidos</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Plátano y cacao</strong><p>Frutal, cremoso y con cacao.</p></div></li>
-                  <li><div><strong>Frutos rojos</strong><p>Mezcla de berries con yogur natural.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Jugos naturales</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Naranja recién exprimida</strong><p>Simple, fresca y llena de sabor.</p></div></li>
-                  <li><div><strong>Verde de estación</strong><p>Fruta fresca, pepino y un toque de limón.</p></div></li>
-                </ul>
-              </section>
-            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Espresso Doble</strong>
+                  <p>Extracción balanceada con notas a chocolate amargo y avellana.</p>
+                </div>
+                <span class="item-price">$2.400</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Americano del Valle</strong>
+                  <p>Espresso doble alargado en agua filtrada a 92°C.</p>
+                </div>
+                <span class="item-price">$2.700</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Flat White</strong>
+                  <p>Doble carga de espresso con microespuma sedosa de leche entera o avena.</p>
+                </div>
+                <span class="item-price">$3.400</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Cappuccino Tradicional</strong>
+                  <p>Espuma cremosa y cacao amargo espolvoreado.</p>
+                </div>
+                <span class="item-price">$3.300</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Latte Miel &amp; Cardamomo</strong>
+                  <p>Endulzado con miel de azahar del valle de Copiapó y un toque especiado.</p>
+                </div>
+                <span class="item-price">$3.800</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Filtrado V60 (300 ml)</strong>
+                  <p>Preparado en barra al momento con nuestro grano invitado del mes.</p>
+                </div>
+                <span class="item-price">$3.900</span>
+              </li>
+            </ul>
           </article>
 
-          <article class="menu-category" id="sandwicheria">
-            <header class="menu-category-heading">
-              <span class="menu-category-icon"><i class="fa-solid fa-bread-slice"></i></span>
-              <div><span class="menu-kicker">02 / PARA COMPARTIR</span><h3>Sándwichería</h3></div>
-              <span class="menu-category-note">Preparados al momento con ingredientes frescos</span>
+          <!-- Categoría 2 -->
+          <article class="menu-card" id="cat-frios">
+            <header class="menu-card-header">
+              <div>
+                <span class="menu-tag">02 · REFRESCANTES</span>
+                <h3>Fríos &amp; Jugos Naturales</h3>
+              </div>
+              <span class="menu-subnote">Ideales para el sol de Atacama</span>
             </header>
-            <div class="menu-subcategories">
-              <section class="menu-subcategory">
-                <h4>Sándwiches comunes</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Clásico de la casa</strong><p>Jamón, queso, tomate y hojas verdes.</p></div></li>
-                  <li><div><strong>Pollo y palta</strong><p>Pollo sazonado, palta cremosa y lechuga.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Sándwiches veganos</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Huerta y hummus</strong><p>Hummus, vegetales asados y hojas frescas.</p></div></li>
-                  <li><div><strong>Palta y champiñón</strong><p>Champiñones salteados, palta y rúcula.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Sándwiches 100% integrales / fitness</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Pollo integral</strong><p>Pollo a la plancha, tomate y mix de hojas.</p></div></li>
-                  <li><div><strong>Verde integral</strong><p>Palta, hummus y vegetales de estación.</p></div></li>
-                </ul>
-              </section>
-            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Cold Brew 18 Horas</strong>
+                  <p>Macerado en frío, baja acidez, dulce y servido con hielo cristalino.</p>
+                </div>
+                <span class="item-price">$3.600</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Espresso Tonic Naranja</strong>
+                  <p>Doble espresso sobre agua tónica artesanal y rodaja de naranja deshidratada.</p>
+                </div>
+                <span class="item-price">$3.900</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Iced Latte Vainilla Natural</strong>
+                  <p>Leche fría, hielo y jarabe casero de vaina de vainilla.</p>
+                </div>
+                <span class="item-price">$3.700</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Jugo Prensado Naranja &amp; Zanahoria</strong>
+                  <p>Exprimido al instante, 100% fruta fresca sin azúcar añadida.</p>
+                </div>
+                <span class="item-price">$3.500</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Limonada Menta &amp; Jengibre</strong>
+                  <p>Limón sutil recién exprimido con hojas frescas de huerto.</p>
+                </div>
+                <span class="item-price">$3.200</span>
+              </li>
+            </ul>
           </article>
 
-          <article class="menu-category" id="postres">
-            <header class="menu-category-heading">
-              <span class="menu-category-icon"><i class="fa-solid fa-cookie-bite"></i></span>
-              <div><span class="menu-kicker">03 / ALGO DULCE</span><h3>Postres</h3></div>
-              <span class="menu-category-note">El acompañamiento perfecto para tu café</span>
+          <!-- Categoría 3 -->
+          <article class="menu-card" id="cat-salado">
+            <header class="menu-card-header">
+              <div>
+                <span class="menu-tag">03 · SALADO</span>
+                <h3>Sándwiches &amp; Tostadas</h3>
+              </div>
+              <span class="menu-subnote">Pan de masa madre horneado en casa</span>
             </header>
-            <div class="menu-subcategories">
-              <section class="menu-subcategory">
-                <h4>Muffins variados</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Arándano y limón</strong><p>Esponjoso, cítrico y horneado en casa.</p></div></li>
-                  <li><div><strong>Chocolate</strong><p>Con cacao y trocitos de chocolate.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Panqueques</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Fruta de estación</strong><p>Con fruta fresca y un toque de miel.</p></div></li>
-                  <li><div><strong>Chocolate y plátano</strong><p>Una combinación clásica y generosa.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Waffles</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Waffle de la casa</strong><p>Dorado, con crema y fruta fresca.</p></div></li>
-                  <li><div><strong>Waffle con chocolate</strong><p>Servido tibio con salsa de chocolate.</p></div></li>
-                </ul>
-              </section>
-              <section class="menu-subcategory">
-                <h4>Churros</h4>
-                <ul class="menu-items">
-                  <li><div><strong>Churros clásicos</strong><p>Recién hechos, con azúcar y canela.</p></div></li>
-                  <li><div><strong>Churros con chocolate</strong><p>Crujientes, acompañados de salsa de chocolate.</p></div></li>
-                </ul>
-              </section>
-            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Tostón Palta Hass &amp; Huevo Poché</strong>
+                  <p>Pan rústico tostado, palta laminada, semillas de zapallo y aceite de oliva.</p>
+                </div>
+                <span class="item-price">$5.400</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Ciabatta Serrano, Brie &amp; Rúcula</strong>
+                  <p>Jamón serrano curado, queso brie fundido, rúcula fresca y mermelada de higos.</p>
+                </div>
+                <span class="item-price">$6.200</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Pollo Grillado &amp; Pesto de Albahaca</strong>
+                  <p>Pechuga marinada a la plancha, tomate confitado y mayonesa de pesto.</p>
+                </div>
+                <span class="item-price">$5.800</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Hummus de Garbanzo &amp; Vegetales Asados (Vegano)</strong>
+                  <p>Pimentones asados, zapallo italiano, hummus casero y brotes verdes.</p>
+                </div>
+                <span class="item-price">$5.200</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Categoría 4 -->
+          <article class="menu-card" id="cat-dulce">
+            <header class="menu-card-header">
+              <div>
+                <span class="menu-tag">04 · REPOSTERÍA</span>
+                <h3>Dulces de la Casa</h3>
+              </div>
+              <span class="menu-subnote">Horneados cada mañana</span>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Rol de Canela &amp; Cardamomo</strong>
+                  <p>Masa brioche tierna con glaseado suave de queso crema.</p>
+                </div>
+                <span class="item-price">$3.100</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Croissant de Mantequilla</strong>
+                  <p>Hojaldre laminado de 27 capas, crujiente por fuera y aireado por dentro.</p>
+                </div>
+                <span class="item-price">$2.600</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Tarta Vasca de Queso</strong>
+                  <p>Cremosa al centro, horneada a alta temperatura con corteza caramelizada.</p>
+                </div>
+                <span class="item-price">$4.200</span>
+              </li>
+              <li class="menu-item">
+                <div class="item-info">
+                  <strong>Galleta Choco-Nuez &amp; Sal de Mar</strong>
+                  <p>Trozo generoso de chocolate 70% cacao, nueces tostadas y escamas de sal.</p>
+                </div>
+                <span class="item-price">$2.300</span>
+              </li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="intro section-pad" id="granos">
-      <div class="container intro-grid">
-        <div class="intro-copy">
-          <p class="eyebrow"><span></span> Del origen a tu taza</p>
-          <h2>El café tiene<br>un <em>lugar de origen.</em></h2>
-          <p>Elegimos granos de pequeños productores y regiones que tienen algo que contar. Los tostamos en lotes pequeños para cuidar cada nota, cada aroma y todo lo que hace especial a una buena taza.</p>
-          <a class="text-link" href="#visitanos">Ven a probarlos <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="origin-card">
-          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Granos de café recién tostados">
-          <div class="origin-caption"><span>01 / NUESTROS GRANOS</span><strong>Pequeños lotes.<br>Grandes historias.</strong></div>
-          <span class="origin-tag"><i class="fa-solid fa-seedling"></i> Tostado fresco</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="craft section-pad" id="metodos">
+    <!-- FOTOS DE PRODUCTOS -->
+    <section class="gallery section-pad" id="productos">
       <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow"><span></span> Cada taza, a su manera</p><h2>Métodos de <em>extracción</em></h2></div>
-          <p>El tiempo, la molienda y el agua también cuentan. Encuentra la preparación que va contigo.</p>
+        <div class="gallery-header">
+          <div>
+            <p class="eyebrow"><i class="fa-solid fa-camera-retro"></i> De Nuestra Barra</p>
+            <h2>Un vistazo a lo que <em>preparamos</em></h2>
+          </div>
+          <a href="https://wa.me/56912345678?text=Hola%20Grano%20Norte%2C%20quiero%20encargar%20para%20retiro%20en%20local"
+             class="button button-olive"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> Pedir para retirar
+          </a>
         </div>
-        <div class="method-grid">
-          <article class="method-card method-image">
-            <img src="https://images.unsplash.com/photo-1517256673644-36ad11246d21?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Preparación de café filtrado en V60">
-            <div class="method-overlay"><span>01</span><h3>Filtrado</h3><p>Notas claras, cuerpo delicado y una taza para descubrir sin prisa.</p></div>
-          </article>
-          <article class="method-card">
-            <span class="method-icon"><i class="fa-solid fa-droplet"></i></span>
-            <span class="method-number">02 / PRENSA FRANCESA</span>
-            <h3>Intenso y<br>envolvente.</h3>
-            <p>Más cuerpo y una textura sedosa que deja que el origen hable.</p>
-            <span class="method-line"></span>
-          </article>
-          <article class="method-card">
-            <span class="method-icon"><i class="fa-solid fa-mug-saucer"></i></span>
-            <span class="method-number">03 / ESPRESSO</span>
-            <h3>Pequeño.<br>Inolvidable.</h3>
-            <p>Concentrado, equilibrado y siempre preparado al momento.</p>
-            <span class="method-line"></span>
-          </article>
+
+        <div class="products-grid">
+          <figure class="product-card">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=85" alt="Flat white recién servido en taza de cerámica artesanal">
+            <figcaption>
+              <span class="product-badge">Favorito</span>
+              <strong>Flat White de la Casa</strong>
+              <p>Textura sedosa con doble shot de nuestro blend Copiapó.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="product-card">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414342d8?auto=format&fit=crop&w=800&q=85" alt="Tostón de masa madre con palta y huevo">
+            <figcaption>
+              <span class="product-badge">Desayuno</span>
+              <strong>Tostón Palta &amp; Masa Madre</strong>
+              <p>Pan rústico recién horneado con palta del valle.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="product-card">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=800&q=85" alt="Roles de canela artesanales recién horneados">
+            <figcaption>
+              <span class="product-badge">Recién horneado</span>
+              <strong>Roles de Canela</strong>
+              <p>Salen tibios del horno todos los días a las 09:30 hrs.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="product-card">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=85" alt="Bolsas de café en grano tostado artesanalmente">
+            <figcaption>
+              <span class="product-badge">Para llevar</span>
+              <strong>Grano Tostado 250g</strong>
+              <p>Llévate nuestro café en grano entero o molido para tu cafetera.</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="pastry section-pad" id="reposteria">
-      <div class="container pastry-grid">
-        <div class="pastry-image">
-          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Repostería artesanal recién horneada">
-          <span class="image-label">HECHO CADA MAÑANA</span>
-        </div>
-        <div class="pastry-copy">
-          <p class="eyebrow"><span></span> Algo rico para acompañar</p>
-          <h2>Repostería<br><em>artesanal.</em></h2>
-          <p>Horneamos cada día con ingredientes nobles, recetas de siempre y ese toque casero que convierte una pausa en un pequeño ritual.</p>
-          <div class="pastry-detail"><i class="fa-solid fa-wheat-awn"></i><span><strong>Del horno a la mesa</strong><small>Preparado fresco, todos los días.</small></span></div>
-          <a class="text-link" href="#visitanos">Guarda un espacio para el postre <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
+    <!-- HORARIOS, MAPA VISUAL Y PEDIDO POR WHATSAPP -->
+    <section class="location section-pad" id="ubicacion">
+      <div class="container location-grid">
+        <div class="location-info">
+          <p class="eyebrow"><i class="fa-solid fa-location-dot"></i> Visítanos en Copiapó</p>
+          <h2>Te esperamos con la cafetera <em>encendida.</em></h2>
+          <p class="location-lead">
+            Estamos a pasos de la Alameda, en un espacio con terraza sombreada, enchufes para trabajar tranquilo y estacionamiento para bicicletas.
+          </p>
 
-    <section class="bar-section section-pad" id="barra">
-      <div class="container bar-content">
-        <p class="eyebrow"><span></span> Un lugar para quedarse</p>
-        <h2>Nuestra barra,<br><em>tu lugar.</em></h2>
-        <p>Ven por el café. Quédate por el aroma, la conversación y esos minutos que son solo tuyos.</p>
-        <a href="#visitanos" class="button button-primary">Pasa por Arcis <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </section>
+          <div class="info-cards">
+            <div class="info-box">
+              <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+              <div>
+                <h3>Horarios de Atención</h3>
+                <ul class="hours-list">
+                  <li><span>Lunes a Viernes</span><strong>08:00 – 20:00 hrs</strong></li>
+                  <li><span>Sábados</span><strong>09:00 – 19:30 hrs</strong></li>
+                  <li><span>Domingos y Festivos</span><strong>09:30 – 14:30 hrs</strong></li>
+                </ul>
+              </div>
+            </div>
 
-    <section class="visit section-pad" id="visitanos">
-      <div class="container visit-content">
-        <p class="eyebrow"><span></span> Un momento para disfrutar</p>
-        <h2>Tu próxima pausa<br>tiene aroma a <em>café.</em></h2>
-        <p>Granos de especialidad, algo recién horneado y una mesa lista para hacer de cualquier día un buen día.</p>
-        <a href="#carta" class="button button-primary">Explora la carta <i class="fa-solid fa-arrow-up"></i></a>
+            <div class="info-box">
+              <div class="info-icon"><i class="fa-solid fa-map-pin"></i></div>
+              <div>
+                <h3>Dirección</h3>
+                <p>Av. Manuel Antonio Matta 485, Local 2<br>Copiapó, Región de Atacama</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-cta-box">
+            <div>
+              <strong>¿Vas con poco tiempo?</strong>
+              <p>Escríbenos por WhatsApp y te tenemos tu café y sándwich listos al llegar.</p>
+            </div>
+            <a href="https://wa.me/56912345678?text=Hola%20Grano%20Norte%2C%20quisiera%20hacer%20un%20pedido%20para%20retiro"
+               class="button button-whatsapp"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> Hacer pedido por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Espacio visual de mapa estilizado de Copiapó -->
+        <div class="map-visual-card" aria-label="Mapa ilustrativo de ubicación en Copiapó">
+          <div class="map-canvas">
+            <!-- Calles y parques estilizados en SVG -->
+            <svg viewBox="0 0 500 440" class="map-svg" role="img" aria-label="Plano esquemático de Av. Matta y Alameda en Copiapó">
+              <!-- Fondo tierra / crema -->
+              <rect width="500" height="440" fill="#EAE2D3" />
+              <!-- Área verde Alameda / Parque Schneider -->
+              <path d="M0,115 Q240,130 500,95 L500,145 Q240,180 0,165 Z" fill="#C9D6BE" />
+              <rect x="45" y="255" width="125" height="90" rx="18" fill="#C9D6BE" />
+              <!-- Río Copiapó (curso sur) -->
+              <path d="M0,395 Q180,375 340,405 T500,390 L500,440 L0,440 Z" fill="#C7D7DC" />
+              <!-- Calles principales -->
+              <path d="M0,140 Q240,155 500,120" stroke="#FAF7F2" stroke-width="18" fill="none" />
+              <path d="M265,0 L245,440" stroke="#FAF7F2" stroke-width="20" fill="none" />
+              <path d="M95,0 L80,440" stroke="#FAF7F2" stroke-width="12" fill="none" />
+              <path d="M405,0 L395,440" stroke="#FAF7F2" stroke-width="12" fill="none" />
+              <path d="M0,245 L500,235" stroke="#FAF7F2" stroke-width="14" fill="none" />
+              <!-- Etiquetas de calles -->
+              <text x="115" y="136" fill="#6D5D50" font-size="11" font-weight="600" font-family="Plus Jakarta Sans, sans-serif">AV. ALAMEDA MANUEL A. MATTA</text>
+              <text x="276" y="72" fill="#6D5D50" font-size="10" font-weight="600" font-family="Plus Jakarta Sans, sans-serif" transform="rotate(3 276 72)">CALLE ATACAMA</text>
+              <text x="62" y="305" fill="#4E633F" font-size="10" font-weight="700" font-family="Plus Jakarta Sans, sans-serif">PLAZA DE ARMAS</text>
+              <text x="340" y="422" fill="#5A7680" font-size="10" font-weight="600" font-family="Plus Jakarta Sans, sans-serif">RÍO COPIAPÓ</text>
+            </svg>
+
+            <!-- Pin interactivo del local -->
+            <div class="map-pin">
+              <div class="pin-pulse"></div>
+              <div class="pin-marker">
+                <i class="fa-solid fa-mug-hot"></i>
+              </div>
+              <div class="pin-label">
+                <strong>Grano Norte</strong>
+                <span>Av. Matta 485 · Copiapó</span>
+              </div>
+            </div>
+
+            <div class="map-overlay-footer">
+              <span><i class="fa-solid fa-compass"></i> Centro de Copiapó</span>
+              <a href="https://maps.google.com/?q=Copiapo+Atacama+Chile" target="_blank" rel="noopener noreferrer">
+                Abrir en Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-content">
-      <a href="#inicio" class="brand footer-brand">
-        <span class="brand-copy"><strong>ARCIS COFFEE</strong><small>Café de Especialidad</small></span>
-      </a>
-      <p>Hecho para disfrutar, taza a taza. <span>© 2026 Arcis Coffee</span></p>
-      <a class="back-top" href="#inicio">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <span class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+          <span class="brand-copy">
+            <strong>Grano Norte</strong>
+            <small>Copiapó · Atacama</small>
+          </span>
+        </a>
+        <p>Café de especialidad tostado con calma en el norte de Chile.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Grano Norte">
+          <i class="fa-brands fa-instagram"></i> @granonorte.cafe
+        </a>
+        <a href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Grano Norte">
+          <i class="fa-brands fa-whatsapp"></i> +56 9 1234 5678
+        </a>
+      </div>
+
+      <a class="back-top" href="#inicio">Subir <i class="fa-solid fa-arrow-up"></i></a>
     </div>
   </footer>
+
 </body>
 </html>
