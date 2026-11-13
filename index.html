@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#F7F3EB">
-  <meta name="description" content="Grano Norte: cafetería de especialidad y tostaduría artesanal en Copiapó. Café fresco, panadería de masa madre y repostería de la casa.">
+  <meta name="description" content="Grano Norte: café de especialidad, panadería artesanal y repostería de la casa en Copiapó.">
+  <meta name="color-scheme" content="light">
   <title>Grano Norte | Cafetería de Especialidad · Copiapó</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,7 +79,7 @@
 
         <div class="hero-visual">
           <div class="hero-photo-frame">
-            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1100&q=85" alt="Taza de latte art servido en mesa de madera cálida">
+            <img fetchpriority="high" decoding="async" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1100&q=85" alt="Taza de latte art servido en mesa de madera cálida">
           </div>
           <div class="hero-floating-badge">
             <span class="badge-icon"><i class="fa-solid fa-award"></i></span>
@@ -95,7 +96,7 @@
     <section class="story section-pad" id="historia">
       <div class="container story-grid">
         <div class="story-media">
-          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85" alt="Interior acogedor de la cafetería Grano Norte">
+          <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85" alt="Interior acogedor de la cafetería Grano Norte">
           <div class="story-quote-card">
             <p>“Queríamos traer el oficio del café de especialidad a Copiapó sin solemnidades: buen grano, sombra fresca y pan recién salido del horno.”</p>
             <span>— Familia fundadora, Barrio Alameda</span>
@@ -350,7 +351,7 @@
 
         <div class="products-grid">
           <figure class="product-card">
-            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=85" alt="Flat white recién servido en taza de cerámica artesanal">
+            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=85" alt="Flat white recién servido en taza de cerámica artesanal">
             <figcaption>
               <span class="product-badge">Favorito</span>
               <strong>Flat White de la Casa</strong>
@@ -359,7 +360,7 @@
           </figure>
 
           <figure class="product-card">
-            <img src="https://images.unsplash.com/photo-1525351484163-7529414342d8?auto=format&fit=crop&w=800&q=85" alt="Tostón de masa madre con palta y huevo">
+            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1525351484163-7529414342d8?auto=format&fit=crop&w=800&q=85" alt="Tostón de masa madre con palta y huevo">
             <figcaption>
               <span class="product-badge">Desayuno</span>
               <strong>Tostón Palta &amp; Masa Madre</strong>
@@ -368,7 +369,7 @@
           </figure>
 
           <figure class="product-card">
-            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=800&q=85" alt="Roles de canela artesanales recién horneados">
+            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=800&q=85" alt="Roles de canela artesanales recién horneados">
             <figcaption>
               <span class="product-badge">Recién horneado</span>
               <strong>Roles de Canela</strong>
@@ -377,7 +378,7 @@
           </figure>
 
           <figure class="product-card">
-            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=85" alt="Bolsas de café en grano tostado artesanalmente">
+            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=85" alt="Bolsas de café en grano tostado artesanalmente">
             <figcaption>
               <span class="product-badge">Para llevar</span>
               <strong>Grano Tostado 250g</strong>
@@ -473,7 +474,7 @@
 
             <div class="map-overlay-footer">
               <span><i class="fa-solid fa-compass"></i> Centro de Copiapó</span>
-              <a href="https://maps.google.com/?q=Copiapo+Atacama+Chile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Manuel+Antonio+Matta+485%2C+Copiap%C3%B3%2C+Atacama%2C+Chile" target="_blank" rel="noopener noreferrer">
                 Abrir en Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -505,9 +506,10 @@
         </a>
       </div>
 
-      <a class="back-top" href="#inicio">Subir <i class="fa-solid fa-arrow-up"></i></a>
+      <div class="footer-bottom"><span>© <span id="current-year">2026</span> Grano Norte · Sitio de muestra</span><a class="back-top" href="#inicio">Volver arriba <i class="fa-solid fa-arrow-up"></i></a></div>
     </div>
   </footer>
 
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
